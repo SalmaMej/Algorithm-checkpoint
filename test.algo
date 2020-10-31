@@ -1,0 +1,31 @@
+ALGORITHM stringChain
+VAR
+    str: STRING :='Hello, my name is Salma.';
+    x: INTEGER := str.length;
+    a: INTEGER := 0;
+BEGIN
+    FOR i FROM 0 TO x-1 STEP step  DO
+        IF (str[i] === " ") THEN
+            a := a + 1;
+        END_IF
+    END_FOR
+    Write(a+1)
+END
+
+ALGORITHM vowels
+VAR
+    str : STRING :='Hello, my name is Salma.';
+    vow : STRING :='aeiouyAEIOUY';
+    x : INTEGER := str.length;  
+    y : INTEGER := vow.length;
+    b : INTEGER := 0
+BEGIN
+    FOR i FROM 0 TO x-1 STEP step  DO
+        FOR j FROM 0 TO y-1 STEP step  DO
+            IF (vow[y] === str[x]) THEN
+                b := b + 1;
+            END_IF
+        END_FOR
+    END_FOR
+    Write(b)
+END

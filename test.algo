@@ -27,6 +27,7 @@ READ(str)
         END_IF
     END_FOR
     WRITE("Characters = " c)
+END
 
 ALGORITHM vowels
 VAR
